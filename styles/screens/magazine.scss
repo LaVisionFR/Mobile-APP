@@ -1,0 +1,24 @@
+@import "../abstracts/_colors.scss";
+@import "../base/_typography.scss";
+@import "../base/_mixins.scss";
+
+.header {
+    @include header-h2-light;
+    color: $white;
+}
+
+.container {
+    width: 100%;
+}
+
+.liste {
+    width: auto;
+}
+
+.article {
+    width: 150px;
+}
+
+.auteur {
+    width: 80px;
+}

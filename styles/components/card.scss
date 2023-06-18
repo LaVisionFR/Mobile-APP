@@ -1,0 +1,37 @@
+@import "../abstracts/_colors.scss";
+@import "../base/_typography.scss";
+@import "../base/_mixins.scss";
+
+.card {
+  @include flex-container(column, nowrap, center, center);
+  width: 150px;
+  gap: 8px;
+  height: 220px;
+  background: $secondary-200;
+  border-radius: 6px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nameArtist { 
+  @include text-md-medium;
+  overflow: hidden;
+  color: $white;
+}
+
+.imgArtist {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.auditeur {
+  @include text-xs-medium;
+  overflow: hidden;
+  color: $white-600;
+}
+
+.spotify {
+  @include text-sm-semibold;
+  overflow: hidden;
+  color: $white;
+}

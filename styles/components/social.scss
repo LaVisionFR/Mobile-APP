@@ -1,0 +1,19 @@
+@import "./styles/abstracts/_colors.scss";
+@import "./styles/base/_typography.scss";
+@import "./styles/base/_mixins.scss";
+
+.container {
+    margin-top: 12px;
+    gap: 4px;
+}
+
+.socialWrapper {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: $secondary;
+    width: 80px;
+    height: 60px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+
+}

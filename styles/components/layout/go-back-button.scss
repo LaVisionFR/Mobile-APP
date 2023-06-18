@@ -1,0 +1,19 @@
+@import "../../abstracts/_colors.scss";
+@import "../../base/_typography.scss";
+@import "../../base/_mixins.scss";
+
+.button {
+    width: 40px;
+    height: 40px;
+
+    @include flex-container(row, nowrap, center, center);
+    border-radius: 60px;
+    border: 1px solid $secondary-400;
+}
+
+
+.icon {
+    width: 14px;
+    height: 14px;
+    color: $secondary;
+}

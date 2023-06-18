@@ -1,0 +1,15 @@
+@import "../abstracts/_colors.scss";
+@import "../base/_typography.scss";
+@import "../base/_mixins.scss";
+
+
+.brand {
+    @include flex-container(row, nowrap, space-between, center);
+    align-self: stretch;
+    padding: 16px;
+}
+
+.appName {
+    @include header-h3-medium;
+    color: $white;
+}

@@ -1,0 +1,9 @@
+
+@import "./styles/abstracts/_colors.scss";
+@import "./styles/base/_typography.scss";
+@import "./styles/base/_mixins.scss";
+
+.container {
+    @include flex-container(row, nowrap, flex-start, stretch);
+    gap: 18px;
+}

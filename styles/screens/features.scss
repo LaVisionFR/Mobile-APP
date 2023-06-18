@@ -1,0 +1,23 @@
+@import "../abstracts/_colors.scss";
+@import "../base/_typography.scss";
+@import "../base/_mixins.scss";
+
+
+.container {
+
+    @include flex-container(column, nowrap, center, center);
+
+    flex: 1;
+    width: 100%;
+
+    padding: 16px 0px;
+
+    gap: 32px;
+}
+
+.header {
+
+    @include header-h2-light;
+    color: $white;
+}
+

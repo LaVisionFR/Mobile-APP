@@ -1,0 +1,29 @@
+@import "./styles/abstracts/_colors.scss";
+@import "./styles/base/_typography.scss";
+@import "./styles/base/_mixins.scss";
+
+.container {
+    margin-top: 12px;
+    gap: 4px;
+}
+
+.tagWrapper {
+    width: 20%;
+    height: auto;
+    background: $secondary;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tagName {
+    @include text-xs-medium;
+    color: $black;
+    text-align: center;
+    line-height: 18px;
+}
+
+.section {
+    @include text-xl-medium;
+    color: $white;
+    margin-bottom: 12px;
+}
