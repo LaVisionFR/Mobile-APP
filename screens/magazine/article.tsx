@@ -8,8 +8,7 @@ import ScreenContainer from '@components/screen-container';
 import { ArticleScreenProps } from '@utils/types';
 import { ScrollView } from 'react-native-gesture-handler';
 import Group from '@components/group';
-import notionManager, { Article, BlockContent } from '@controllers/notionManager';
-import Video from 'react-native-video';
+import notionManager, { BlockContent } from '@controllers/notionManager';
 import { Linking } from 'react-native';
 
 const ArticleView = ({ route, navigation }: ArticleScreenProps) => {
@@ -64,8 +63,6 @@ const ArticleView = ({ route, navigation }: ArticleScreenProps) => {
                   );
               case 'image':
                 return <Image source={{ uri: (block as any).content }} style={getComponentStyles(block.taille)} key={index} />;
-              case 'video':
-                return <Video source={{ uri: (block as any).content }} style={getComponentStyles(block.taille)} key={index} />;
               default:
                 return null;
             }

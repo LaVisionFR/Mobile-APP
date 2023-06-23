@@ -114,7 +114,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Features">  
         <Stack.Screen
               name="Features"
-              component={Features}
+              component={Features as any}
               options={{
                 ...horizontalAnimation,
                 headerShown: false,
@@ -123,7 +123,7 @@ export default function App() {
           />
           <Stack.Screen
               name="Ia"
-              component={Ia}
+              component={Ia as any}
               options={{
                 ...horizontalAnimation,
                 headerShown: false,
@@ -132,7 +132,7 @@ export default function App() {
           />
           <Stack.Screen
               name="Shuffle"
-              component={Shuffle}
+              component={Shuffle as any}
               options={{
                 ...horizontalAnimation,
                 headerShown: false,
@@ -147,7 +147,7 @@ export default function App() {
     <Stack.Navigator initialRouteName="Magazine">  
       <Stack.Screen
             name="Magazine"
-            component={Magazine}
+            component={Magazine as any}
             options={{
               ...horizontalAnimation,
               headerShown: false,
@@ -156,7 +156,7 @@ export default function App() {
         />
         <Stack.Screen
             name="Article"
-            component={Article}
+            component={Article as any}
             options={{
               ...horizontalAnimation,
               headerShown: false,
@@ -165,7 +165,7 @@ export default function App() {
         />
         <Stack.Screen
             name="Auteur"
-            component={Auteur}
+            component={Auteur as any}
             options={{
               ...horizontalAnimation,
               headerShown: false,
@@ -183,7 +183,7 @@ export default function App() {
         initialRouteName='Home'
         tabBar={TabBar}
         sceneContainerStyle={{ backgroundColor: "transparent" }}>
-        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Home" component={Home as any} />
         <Tab.Screen name="Magazine" component={MagazineStack} />
 		    <Tab.Screen name="Features" component={FeaturesStack} />
       </Tab.Navigator>

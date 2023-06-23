@@ -76,7 +76,7 @@ const Home = ({ navigation }: ScreenProps) => {
 
     return (
         <ScreenContainer style={styles.screen}>
-            <ScrollView showsVerticalScrollIndicator={true} persistentScrollbar={true}>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <Brand />
                 <Tag name={"Artistes"} nameSection='Les perles rares :' />
                 <ScrollView horizontal showsHorizontalScrollIndicator={false} >

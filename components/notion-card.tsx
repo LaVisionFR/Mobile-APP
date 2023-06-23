@@ -4,8 +4,6 @@ import { Article, Auteur } from '@controllers/notionManager';
 import styles from '@styles/components/notion-card.scss';
 import { StyleProp } from 'react-native';
 
-import defaultAvatar from '@assets/images/default-avatar.png';
-
 interface NotionCardProps {
   db?: Article,
   auteurs?: Auteur,

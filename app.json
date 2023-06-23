@@ -2,21 +2,23 @@
   "expo": {
     "name": "La Vision",
     "slug": "lavision",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "white",
+    "userInterfaceStyle": "light",
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.enzopoint.lavision"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFF"
-      }
+      },
+      "package": "com.enzopoint.lavision"
     },
     "web": {
       "favicon": "./assets/icon.png"

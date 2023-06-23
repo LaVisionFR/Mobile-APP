@@ -14,16 +14,16 @@ class SpotifyManager {
   private playlistUrl: string;
   private artistUrl: string;
   private recommandationUrl: string;
-  private clientId: string;
-  private clientSecret: string;
+  private clientId: any
+  private clientSecret: any
 
   constructor() {
     this._token = '';
     this.playlistUrl = 'https://api.spotify.com/v1/playlists/';
     this.recommandationUrl = 'https://api.spotify.com/v1/recommendations';
     this.artistUrl = 'https://api.spotify.com/v1/artists/';
-    this.clientId = 'b35fba482949471a84e2b9a51224732f';
-    this.clientSecret = 'cfef82c4cdd44baeb6704b07d3d30e02';
+    this.clientId = process.env.SPOTIFY_CLIENT_ID;
+    this.clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
   }
 
   private async authenticate() {

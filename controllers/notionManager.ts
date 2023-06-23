@@ -1,3 +1,5 @@
+import { proc } from "react-native-reanimated";
+
 export interface Article {
   articleId: string;
   title: string;
@@ -23,13 +25,13 @@ export interface BlockContent {
 
 class notionManager {
   private _NOTION_API: string;
-  private _NOTION_SECRET: string;
-  private _NOTION_DATABASE_ID: string
+  private _NOTION_SECRET: any;
+  private _NOTION_DATABASE_ID: any;
 
   constructor() {
     this._NOTION_API = 'https://api.notion.com/v1/';
-    this._NOTION_SECRET = "secret_71yF5AR7t0dKxdJb4Pw09kP1PB5cWV8IwYJUwTVOmho"
-    this._NOTION_DATABASE_ID = "b45d1e15bf1b46db93623aefdec13090";
+    this._NOTION_SECRET = process.env.NOTION_SECRET;
+    this._NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID;
   }
   
   public async fetchPage(pageId: string) {
@@ -37,7 +39,7 @@ class notionManager {
         method: 'GET',
         headers: {
             'Authorization': 'Bearer ' + this._NOTION_SECRET,
-            'Notion-Version': '2021-05-13'
+            'Notion-Version': '2022-06-28',
         }
     });
     
