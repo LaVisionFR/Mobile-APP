@@ -4,6 +4,7 @@
 
 .container {
   width: 100%;
-
-  @include flex-container(row, nowrap, center, flex-end);
+  min-height: 32px;
+  @include flex-container(row, nowrap, center, center);
 }
+

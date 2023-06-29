@@ -1,4 +1,4 @@
-import { proc } from "react-native-reanimated";
+import { NOTION_SECRET, NOTION_DATABASE_ID } from '@env'
 
 export interface Article {
   articleId: string;
@@ -30,8 +30,8 @@ class notionManager {
 
   constructor() {
     this._NOTION_API = 'https://api.notion.com/v1/';
-    this._NOTION_SECRET = process.env.NOTION_SECRET;
-    this._NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID;
+    this._NOTION_SECRET = NOTION_SECRET;
+    this._NOTION_DATABASE_ID = NOTION_DATABASE_ID;
   }
   
   public async fetchPage(pageId: string) {

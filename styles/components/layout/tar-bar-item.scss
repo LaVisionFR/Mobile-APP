@@ -4,8 +4,8 @@
 
 .item {
   flex: 1;
-  gap: 8px;
-  @include flex-container(column, nowrap, center, center);
+  gap: 16px;
+  @include flex-container(column, nowrap, flex-end, center);
 }
 
 .label {

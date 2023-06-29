@@ -49,7 +49,6 @@ const Home = ({ navigation }: ScreenProps) => {
     // render
 
     const renderArtists = () => {
-        let nbKey = 0;
         return artistList.map((artist: any, index: number) => (
             <Card
                 key={index}

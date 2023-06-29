@@ -3,6 +3,7 @@
   "compilerOptions": {
     "strict": true,
     "baseUrl": ".",
+    "typeRoots": ["./types"],
     "paths": {
       "@components/*": ["components/*"],
       "@screens/*": ["screens/*"],

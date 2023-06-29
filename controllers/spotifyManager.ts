@@ -1,4 +1,6 @@
+// @ts-ignore
 import base64 from 'base-64';
+import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIEN_SECRET } from '@env';
 
 export interface ArtistInfo {
   name?: string;
@@ -22,8 +24,8 @@ class SpotifyManager {
     this.playlistUrl = 'https://api.spotify.com/v1/playlists/';
     this.recommandationUrl = 'https://api.spotify.com/v1/recommendations';
     this.artistUrl = 'https://api.spotify.com/v1/artists/';
-    this.clientId = process.env.SPOTIFY_CLIENT_ID;
-    this.clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
+    this.clientId = SPOTIFY_CLIENT_ID;
+    this.clientSecret = SPOTIFY_CLIEN_SECRET;
   }
 
   private async authenticate() {

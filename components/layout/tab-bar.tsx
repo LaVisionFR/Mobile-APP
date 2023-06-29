@@ -1,11 +1,7 @@
 import { MaterialTopTabBarProps } from "@react-navigation/material-top-tabs"
-import { SafeAreaView } from "react-native"
-
+import { SafeAreaView, View } from "react-native"
 import styles from "@styles/components/layout/tab-bar.scss"
 import TabBarItem from "./tab-bar-item"
-import { View , ImageBackground} from "react-native"
-
-
 
 const TabBar = (
     {
@@ -18,7 +14,7 @@ const TabBar = (
     // render
 
     return (
-        <SafeAreaView style={{...styles.container, ...styles.wave}}>
+        <SafeAreaView style={styles.container}>
           {state.routes.map((route, index) => (
             <TabBarItem
               key={route.key}
